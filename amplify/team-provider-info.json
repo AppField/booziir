@@ -10,6 +10,14 @@
             "StackName": "amplify-booziir-develop-120131",
             "StackId": "arn:aws:cloudformation:eu-central-1:621722768502:stack/amplify-booziir-develop-120131/daf56720-b213-11ea-ba04-025bd1eb3930",
             "AmplifyAppId": "dnlss9pok6j8f"
+        },
+        "categories": {
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "dnlss9pok6j8f",
+                    "type": "cicd"
+                }
+            }
         }
     }
 }
