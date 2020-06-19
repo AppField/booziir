@@ -1,0 +1,15 @@
+{
+    "develop": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-booziir-develop-120131-authRole",
+            "UnauthRoleArn": "arn:aws:iam::621722768502:role/amplify-booziir-develop-120131-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::621722768502:role/amplify-booziir-develop-120131-authRole",
+            "Region": "eu-central-1",
+            "DeploymentBucketName": "amplify-booziir-develop-120131-deployment",
+            "UnauthRoleName": "amplify-booziir-develop-120131-unauthRole",
+            "StackName": "amplify-booziir-develop-120131",
+            "StackId": "arn:aws:cloudformation:eu-central-1:621722768502:stack/amplify-booziir-develop-120131/daf56720-b213-11ea-ba04-025bd1eb3930",
+            "AmplifyAppId": "dnlss9pok6j8f"
+        }
+    }
+}
