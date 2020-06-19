@@ -1,0 +1,11 @@
+{
+    "AppSyncApiName": "booziir",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": "false",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authbooziir6db75974",
+            "Outputs.UserPoolId"
+        ]
+    }
+}

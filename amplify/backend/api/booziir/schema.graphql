@@ -1,0 +1,48 @@
+type CocktailRecipe @model {
+  id: ID!
+  name: String!
+  description: String
+  preparation: [String]
+  allIngredientsAvailable: Boolean!
+  ingredients: [CocktailIngredient]
+    @connection(keyName: "byCocktailIngredient", fields: ["id"])
+}
+
+type CocktailIngredient
+  @model(queries: null)
+  @key(
+    name: "byCocktailIngredient"
+    fields: ["cocktailRecipeID", "ingredientID"]
+  ) {
+  id: ID!
+  cocktailRecipeID: ID!
+  ingredientID: ID!
+  amount: String!
+  type: AmountType
+  cocktailRecipe: CocktailRecipe! @connection(fields: ["cocktailRecipeID"])
+  ingredient: Ingredient @connection(fields: ["ingredientID"])
+}
+
+type Ingredient @model {
+  id: ID!
+  name: String!
+  inStock: Boolean!
+  type: IngredientType!
+  cocktailIngredients: [CocktailIngredient]
+    @connection(keyName: "byCocktailIngredient", fields: ["id"])
+}
+
+enum IngredientType {
+  alcoholic
+  nonAlcoholic
+  nonLiquid
+}
+
+enum AmountType {
+  tableSpoon
+  teaSpoon
+  barSpoon
+  ml
+  cl
+  leaves
+}
