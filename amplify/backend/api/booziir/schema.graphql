@@ -3,7 +3,7 @@ type CocktailRecipe @model {
   name: String!
   description: String
   preparation: [String]
-  allIngredientsAvailable: Boolean!
+  areIngredientsAvailable: Boolean!
   ingredients: [CocktailIngredient]
     @connection(keyName: "byCocktailIngredient", fields: ["id"])
 }
