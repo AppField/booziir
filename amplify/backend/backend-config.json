@@ -29,12 +29,5 @@
 			}
 		}
 	},
-	"function": {
-		"checkCocktailIngredients": {
-			"build": true,
-			"providerPlugin": "awscloudformation",
-			"service": "Lambda",
-			"dependsOn": []
-		}
-	}
+	"function": {}
 }
